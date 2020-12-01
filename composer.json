@@ -7,5 +7,8 @@
             "email": "chiluka_sasha@mail.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+      ]
 }
