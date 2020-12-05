@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Start run linter
-      - uses: shadowaion/php-project-lvl1
         run: |
           echo "GITHUB_REPOSITORY"
           echo "GITHUB_WORKSPACE"
