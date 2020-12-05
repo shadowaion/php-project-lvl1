@@ -15,4 +15,5 @@ jobs:
         run: |
           echo "$GITHUB_REPOSITORY"
           echo "$GITHUB_WORKSPACE"
+          echo "$INSTALL_DIR"
           make lint
