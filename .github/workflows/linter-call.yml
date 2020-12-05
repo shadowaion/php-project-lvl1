@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Start run linter
         run: |
-          echo "GITHUB_REPOSITORY"
-          echo "GITHUB_WORKSPACE"
+          echo "$GITHUB_REPOSITORY"
+          echo "$GITHUB_WORKSPACE"
           make lint
