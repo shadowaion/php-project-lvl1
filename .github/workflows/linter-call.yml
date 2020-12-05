@@ -1,5 +1,4 @@
 name: Call linter
-description: 'Call linter from GitHub actions'
 
 on: 
   push:
