@@ -11,6 +11,7 @@ jobs:
     name: Call linter for PHP
     runs-on: ubuntu-latest
     steps:
+      - uses: action/checkout@2
       - name: Start run linter
         run: |
           echo "$GITHUB_REPOSITORY"
