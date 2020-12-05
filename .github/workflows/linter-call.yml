@@ -1,0 +1,18 @@
+name: Call linter
+description: 'Call linter from GitHub actions'
+
+on: 
+  push:
+    branches:
+      - main
+      - shadowaion-lint-1
+
+jobs:
+  make-lint:
+    name: Call linter for PHP
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start run linter
+        run: |
+          cd $HOME/Projects/php-project-lvl1
+          make lint
