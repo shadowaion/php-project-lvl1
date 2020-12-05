@@ -15,5 +15,5 @@ jobs:
         run: |
           echo "$GITHUB_REPOSITORY"
           echo "$GITHUB_WORKSPACE"
-          apt install make
+          composer run-script phpcs -- --standard=PSR12 src bin
           make lint
