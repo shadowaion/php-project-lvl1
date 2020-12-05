@@ -13,5 +13,4 @@ jobs:
     steps:
       - name: Start run linter
         run: |
-          cd $HOME/Projects/php-project-lvl1
           make lint
