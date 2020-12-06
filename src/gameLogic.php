@@ -88,14 +88,14 @@ function braingameGCD()
         line('Find the greatest common divisor of given numbers.');
         $rightAnswer = 0;
         while ($rightAnswer <= 1) {
-        $firstNumber = rand(0, 100);
-        $secondNumber = rand(0, 100);
-        for ($j = $firstNumber; $j > 0; --$j) {
-            if (($firstNumber % $j === 0) && ($secondNumber % $j === 0)) {
-                $rightAnswer = $j;
-                break;
+            $firstNumber = rand(0, 100);
+            $secondNumber = rand(0, 100);
+            for ($j = $firstNumber; $j > 0; --$j) {
+                if (($firstNumber % $j === 0) && ($secondNumber % $j === 0)) {
+                    $rightAnswer = $j;
+                    break;
+                }
             }
-        }
         }
         line('Question: %d %d', $firstNumber, $secondNumber);
         $userAnswer = (int)prompt('Your answer');
@@ -123,7 +123,7 @@ function braingameProgression()
     $progressionSize = 0;
     $progressionStart = 0;
     $hiddenElement = 0;
-    
+
     Cli\greeting();
     line('What number is missing in the progression?');
     for ($i = 0; $i < 3; ++$i) {
