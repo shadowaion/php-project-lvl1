@@ -5,4 +5,4 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use php\project\lvl1\Engine;
 
-engine\startTheGame(5);
+Engine\startTheGame(5);
