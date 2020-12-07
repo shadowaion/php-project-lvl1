@@ -3,7 +3,6 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use php\project\lvl1\game\logic;
 use php\project\lvl1\Engine;
 
 engine\startTheGame(4);
