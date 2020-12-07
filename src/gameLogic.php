@@ -3,6 +3,7 @@
 namespace php\project\lvl1\game\logic;
 
 use php\project\lvl1\Cli;
+use php\project\lvl1\Engine;
 
 use function cli\line;
 use function cli\prompt;
@@ -128,11 +129,11 @@ function braingameProgression()
     line('What number is missing in the progression?');
     for ($i = 0; $i < 3; ++$i) {
         line('Question:');
-        $progression = array();
+        $progression = [];
         $progressionStep = rand(1, 10);
         $progressionSize = rand(5, 10);
         $progressionStart = rand(1, 50);
-        $hiddenElement = rand(0, $progressionSize);
+        $hiddenElement = rand(0, $progressionSize - 1);
         for ($j = 0; $j < $progressionSize; ++$j) {
             $progression[] = $progressionStart + ($j * $progressionStep);
             if ($j === $hiddenElement) {
