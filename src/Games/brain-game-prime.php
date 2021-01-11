@@ -12,7 +12,6 @@ function braingamePrime(): bool
     $rightAnswer = '';
     for ($i = 0; $i < 3; ++$i) {
         $number = rand(0, 100);
-        $number = 0;
         $rightAnswer = "yes";
         if ($number === 0 || $number === 1) {
             $rightAnswer = "no";
