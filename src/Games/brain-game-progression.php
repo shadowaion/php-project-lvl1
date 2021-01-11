@@ -16,7 +16,7 @@ function braingameProgression()
     $progressionStart = 0;
     $hiddenElement = 0;
     for ($i = 0; $i < 3; ++$i) {
-        line('Question:');
+        echo 'Question: ';
         $progression = [];
         $progressionStep = rand(1, 10);
         $progressionSize = rand(5, 10);
