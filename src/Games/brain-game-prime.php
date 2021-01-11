@@ -12,11 +12,16 @@ function braingamePrime(): bool
     $rightAnswer = '';
     for ($i = 0; $i < 3; ++$i) {
         $number = rand(0, 100);
+        $number = 0;
         $rightAnswer = "yes";
-        for ($j = 2; $j < $number - 1; ++$j) {
-            if ($number % $j === 0) {
-                $rightAnswer = "no";
-                break;
+        if ($number === 0 || $number === 1) {
+            $rightAnswer = "no";
+        } else {
+            for ($j = 2; $j < sqrt($number); ++$j) {
+                if ($number % $j === 0) {
+                    $rightAnswer = "no";
+                    break;
+                }
             }
         }
         line('Question: %d', $number);
