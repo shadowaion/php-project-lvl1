@@ -20,7 +20,7 @@ function braingamePrime()
             }
         }
         line('Question: %d', $number);
-        $userAnswer = prompt('Your answer');
+        $userAnswer = prompt('Your answer: ');
         if ($rightAnswer !== $userAnswer) {
             line('Wrong!');
             $wrongAnswer = true;

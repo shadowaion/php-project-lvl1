@@ -11,7 +11,11 @@ use function cli\prompt;
 function startTheGame($gameNumber)
 {
     $gameEndNotSuccess = false;
-    Cli\greeting();
+    //Cli\greeting();
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+
     switch ($gameNumber) {
         case 1:
             line('Answer "yes" if the number is even, otherwise answer "no".');
@@ -37,7 +41,9 @@ function startTheGame($gameNumber)
             break;
     }
     if ($gameEndNotSuccess === false) {
-        line('Congratulations!');
+        line('Congratulations, %s!', $name);
+    } else {
+        line("Let's try again, %s!", $name);
     }
     line('Game over!');
 }

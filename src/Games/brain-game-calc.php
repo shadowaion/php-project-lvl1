@@ -32,7 +32,6 @@ function braingameCalc()
         $userAnswer = (int)prompt('Your answer');
         if ($userAnswer !== $rightAnswer) {
             line("'{$userAnswer}' is wrong answer! ;(. Correct answer was '{$rightAnswer}'.");
-            line("Let's try again!");
             $wrongAnswer = true;
             break;
         }
