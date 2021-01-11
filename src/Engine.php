@@ -8,7 +8,7 @@ use php\project\lvl1\Cli;
 use function cli\line;
 use function cli\prompt;
 
-function startTheGame($gameNumber): void
+function startTheGame(int $gameNumber): void
 {
     $gameEndNotSuccess = false;
     //Cli\greeting();
