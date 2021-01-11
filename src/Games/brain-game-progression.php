@@ -5,7 +5,7 @@ namespace php\project\lvl1\Games;
 use function cli\line;
 use function cli\prompt;
 
-function braingameProgression()
+function braingameProgression(): bool
 {
     $wrongAnswer = false;
     $userAnswer = 0;
