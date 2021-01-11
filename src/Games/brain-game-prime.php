@@ -16,7 +16,7 @@ function braingamePrime(): bool
         if ($number === 0 || $number === 1) {
             $rightAnswer = "no";
         } else {
-            for ($j = 2; $j < sqrt($number); ++$j) {
+            for ($j = 2; $j <= sqrt($number); ++$j) {
                 if ($number % $j === 0) {
                     $rightAnswer = "no";
                     break;
